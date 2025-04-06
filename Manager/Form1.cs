@@ -50,13 +50,16 @@ namespace Manager
         {
             Reset_btn();
             Select_btn(btnIncome);
+            ucIncome uc_ic = new ucIncome();
+            pnlPage.Controls.Clear();
+            pnlPage.Controls.Add(uc_ic);
         }
 
         private void btnStaff_Click(object sender, EventArgs e)
         {
             Reset_btn();
             Select_btn(btnStaff);
-            ucStaff uc_p = new ucStaff();
+            ucIncome uc_p = new ucStaff();
             pnlPage.Controls.Clear();
             pnlPage.Controls.Add(uc_p);
         }

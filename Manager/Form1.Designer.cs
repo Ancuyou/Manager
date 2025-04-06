@@ -32,32 +32,32 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManager));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.TLP_top = new System.Windows.Forms.TableLayoutPanel();
-            this.btnMinimize = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlSearch = new System.Windows.Forms.Panel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblLineSearch = new System.Windows.Forms.Label();
-            this.btnMaximize = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.elipseFrmManager = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.elipsePnlSearch = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.elipsePnlPage = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnlPage = new System.Windows.Forms.Panel();
             this.elipseBtnProduct = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnProduct = new System.Windows.Forms.Button();
             this.elipseBtnIncome = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnIncome = new System.Windows.Forms.Button();
             this.elipseBtnStaff = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnStaff = new System.Windows.Forms.Button();
             this.elipseBtnFacility = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnFacility = new System.Windows.Forms.Button();
             this.TLB_menu = new System.Windows.Forms.TableLayoutPanel();
             this.pnlFill = new System.Windows.Forms.Panel();
+            this.btnFacility = new System.Windows.Forms.Button();
+            this.btnStaff = new System.Windows.Forms.Button();
+            this.btnIncome = new System.Windows.Forms.Button();
+            this.btnProduct = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMaximize = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.TLP_top.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlSearch.SuspendLayout();
             this.TLB_menu.SuspendLayout();
             this.pnlFill.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -75,6 +75,7 @@
             // 
             // TLP_top
             // 
+            this.TLP_top.BackColor = System.Drawing.Color.MistyRose;
             this.TLP_top.ColumnCount = 8;
             this.TLP_top.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.TLP_top.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
@@ -98,31 +99,6 @@
             this.TLP_top.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.TLP_top.Size = new System.Drawing.Size(1100, 50);
             this.TLP_top.TabIndex = 0;
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Image = global::Manager.Properties.Resources.minus_outline_54918;
-            this.btnMinimize.Location = new System.Drawing.Point(953, 3);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(44, 29);
-            this.btnMinimize.TabIndex = 2;
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::Manager.Properties.Resources.search_4398568__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(883, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.TLP_top.SetRowSpan(this.pictureBox1, 2);
-            this.pictureBox1.Size = new System.Drawing.Size(64, 44);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // pnlSearch
             // 
@@ -172,32 +148,6 @@
             this.lblLineSearch.TabIndex = 1;
             this.lblLineSearch.Visible = false;
             // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMaximize.FlatAppearance.BorderSize = 0;
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Image = global::Manager.Properties.Resources.two_rounded_equal_squares_outlines_symbol_54725;
-            this.btnMaximize.Location = new System.Drawing.Point(1003, 3);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(44, 29);
-            this.btnMaximize.TabIndex = 2;
-            this.btnMaximize.UseVisualStyleBackColor = true;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Image = global::Manager.Properties.Resources.close;
-            this.btnExit.Location = new System.Drawing.Point(1053, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(44, 29);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // elipseFrmManager
             // 
             this.elipseFrmManager.BorderRadius = 23;
@@ -228,99 +178,24 @@
             this.elipseBtnProduct.BorderRadius = 12;
             this.elipseBtnProduct.TargetControl = this.btnProduct;
             // 
-            // btnProduct
-            // 
-            this.btnProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnProduct.FlatAppearance.BorderSize = 0;
-            this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProduct.Font = new System.Drawing.Font("Comic Sans MS", 7F, System.Drawing.FontStyle.Bold);
-            this.btnProduct.ImageKey = "icons8-coffee-beans-48.png";
-            this.btnProduct.ImageList = this.imageList1;
-            this.btnProduct.Location = new System.Drawing.Point(10, 10);
-            this.btnProduct.Margin = new System.Windows.Forms.Padding(10);
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(70, 77);
-            this.btnProduct.TabIndex = 0;
-            this.btnProduct.Text = "Product";
-            this.btnProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnProduct.UseVisualStyleBackColor = true;
-            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
-            // 
             // elipseBtnIncome
             // 
             this.elipseBtnIncome.BorderRadius = 12;
             this.elipseBtnIncome.TargetControl = this.btnIncome;
-            // 
-            // btnIncome
-            // 
-            this.btnIncome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIncome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnIncome.FlatAppearance.BorderSize = 0;
-            this.btnIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIncome.Font = new System.Drawing.Font("Comic Sans MS", 7F, System.Drawing.FontStyle.Bold);
-            this.btnIncome.ImageKey = "profits_3816351.png";
-            this.btnIncome.ImageList = this.imageList1;
-            this.btnIncome.Location = new System.Drawing.Point(10, 107);
-            this.btnIncome.Margin = new System.Windows.Forms.Padding(10);
-            this.btnIncome.Name = "btnIncome";
-            this.btnIncome.Size = new System.Drawing.Size(70, 77);
-            this.btnIncome.TabIndex = 1;
-            this.btnIncome.Text = "Income";
-            this.btnIncome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnIncome.UseVisualStyleBackColor = true;
-            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
             // 
             // elipseBtnStaff
             // 
             this.elipseBtnStaff.BorderRadius = 12;
             this.elipseBtnStaff.TargetControl = this.btnStaff;
             // 
-            // btnStaff
-            // 
-            this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnStaff.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnStaff.FlatAppearance.BorderSize = 0;
-            this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStaff.Font = new System.Drawing.Font("Comic Sans MS", 7F, System.Drawing.FontStyle.Bold);
-            this.btnStaff.ImageKey = "user_8763547.png";
-            this.btnStaff.ImageList = this.imageList1;
-            this.btnStaff.Location = new System.Drawing.Point(10, 204);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(10);
-            this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(70, 77);
-            this.btnStaff.TabIndex = 2;
-            this.btnStaff.Text = "Staff";
-            this.btnStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnStaff.UseVisualStyleBackColor = true;
-            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
-            // 
             // elipseBtnFacility
             // 
             this.elipseBtnFacility.BorderRadius = 12;
             this.elipseBtnFacility.TargetControl = this.btnFacility;
             // 
-            // btnFacility
-            // 
-            this.btnFacility.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFacility.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFacility.FlatAppearance.BorderSize = 0;
-            this.btnFacility.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacility.Font = new System.Drawing.Font("Comic Sans MS", 7F, System.Drawing.FontStyle.Bold);
-            this.btnFacility.ImageKey = "house_1758128.png";
-            this.btnFacility.ImageList = this.imageList1;
-            this.btnFacility.Location = new System.Drawing.Point(10, 301);
-            this.btnFacility.Margin = new System.Windows.Forms.Padding(10);
-            this.btnFacility.Name = "btnFacility";
-            this.btnFacility.Size = new System.Drawing.Size(70, 77);
-            this.btnFacility.TabIndex = 3;
-            this.btnFacility.Text = "Facility";
-            this.btnFacility.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnFacility.UseVisualStyleBackColor = true;
-            this.btnFacility.Click += new System.EventHandler(this.btnFacility_Click);
-            // 
             // TLB_menu
             // 
+            this.TLB_menu.BackColor = System.Drawing.Color.MistyRose;
             this.TLB_menu.ColumnCount = 1;
             this.TLB_menu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TLB_menu.Controls.Add(this.btnFacility, 0, 3);
@@ -343,6 +218,7 @@
             // 
             // pnlFill
             // 
+            this.pnlFill.BackColor = System.Drawing.Color.MistyRose;
             this.pnlFill.Controls.Add(this.pnlPage);
             this.pnlFill.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFill.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
@@ -352,6 +228,134 @@
             this.pnlFill.Padding = new System.Windows.Forms.Padding(0, 0, 20, 20);
             this.pnlFill.Size = new System.Drawing.Size(1010, 650);
             this.pnlFill.TabIndex = 3;
+            // 
+            // btnFacility
+            // 
+            this.btnFacility.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFacility.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnFacility.FlatAppearance.BorderSize = 0;
+            this.btnFacility.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacility.Font = new System.Drawing.Font("Comic Sans MS", 7F, System.Drawing.FontStyle.Bold);
+            this.btnFacility.ImageKey = "house_1758128.png";
+            this.btnFacility.ImageList = this.imageList1;
+            this.btnFacility.Location = new System.Drawing.Point(10, 301);
+            this.btnFacility.Margin = new System.Windows.Forms.Padding(10);
+            this.btnFacility.Name = "btnFacility";
+            this.btnFacility.Size = new System.Drawing.Size(70, 77);
+            this.btnFacility.TabIndex = 3;
+            this.btnFacility.Text = "Facility";
+            this.btnFacility.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnFacility.UseVisualStyleBackColor = true;
+            this.btnFacility.Click += new System.EventHandler(this.btnFacility_Click);
+            // 
+            // btnStaff
+            // 
+            this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStaff.FlatAppearance.BorderSize = 0;
+            this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStaff.Font = new System.Drawing.Font("Comic Sans MS", 7F, System.Drawing.FontStyle.Bold);
+            this.btnStaff.ImageKey = "user_8763547.png";
+            this.btnStaff.ImageList = this.imageList1;
+            this.btnStaff.Location = new System.Drawing.Point(10, 204);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(10);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Size = new System.Drawing.Size(70, 77);
+            this.btnStaff.TabIndex = 2;
+            this.btnStaff.Text = "Staff";
+            this.btnStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
+            // 
+            // btnIncome
+            // 
+            this.btnIncome.BackColor = System.Drawing.Color.MistyRose;
+            this.btnIncome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIncome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnIncome.FlatAppearance.BorderSize = 0;
+            this.btnIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIncome.Font = new System.Drawing.Font("Comic Sans MS", 7F, System.Drawing.FontStyle.Bold);
+            this.btnIncome.ImageKey = "profits_3816351.png";
+            this.btnIncome.ImageList = this.imageList1;
+            this.btnIncome.Location = new System.Drawing.Point(10, 107);
+            this.btnIncome.Margin = new System.Windows.Forms.Padding(10);
+            this.btnIncome.Name = "btnIncome";
+            this.btnIncome.Size = new System.Drawing.Size(70, 77);
+            this.btnIncome.TabIndex = 1;
+            this.btnIncome.Text = "Income";
+            this.btnIncome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnIncome.UseVisualStyleBackColor = false;
+            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click);
+            // 
+            // btnProduct
+            // 
+            this.btnProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnProduct.FlatAppearance.BorderSize = 0;
+            this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProduct.Font = new System.Drawing.Font("Comic Sans MS", 7F, System.Drawing.FontStyle.Bold);
+            this.btnProduct.ImageKey = "icons8-coffee-beans-48.png";
+            this.btnProduct.ImageList = this.imageList1;
+            this.btnProduct.Location = new System.Drawing.Point(10, 10);
+            this.btnProduct.Margin = new System.Windows.Forms.Padding(10);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(70, 77);
+            this.btnProduct.TabIndex = 0;
+            this.btnProduct.Text = "Product";
+            this.btnProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnProduct.UseVisualStyleBackColor = true;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Image = global::Manager.Properties.Resources.minus_outline_54918;
+            this.btnMinimize.Location = new System.Drawing.Point(953, 3);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(44, 29);
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::Manager.Properties.Resources.search_4398568__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(883, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.TLP_top.SetRowSpan(this.pictureBox1, 2);
+            this.pictureBox1.Size = new System.Drawing.Size(64, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMaximize.FlatAppearance.BorderSize = 0;
+            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximize.Image = global::Manager.Properties.Resources.two_rounded_equal_squares_outlines_symbol_54725;
+            this.btnMaximize.Location = new System.Drawing.Point(1003, 3);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(44, 29);
+            this.btnMaximize.TabIndex = 2;
+            this.btnMaximize.UseVisualStyleBackColor = true;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Image = global::Manager.Properties.Resources.close;
+            this.btnExit.Location = new System.Drawing.Point(1053, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(44, 29);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmManager
             // 
@@ -366,10 +370,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manager";
             this.TLP_top.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlSearch.ResumeLayout(false);
             this.TLB_menu.ResumeLayout(false);
             this.pnlFill.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

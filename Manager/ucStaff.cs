@@ -11,9 +11,9 @@ using Guna.UI2.WinForms;
 
 namespace Manager
 {
-    public partial class ucStaff : UserControl
+    public partial class ucIncome : UserControl
     {
-        public ucStaff()
+        public ucIncome()
         {
             InitializeComponent();
         }
@@ -127,6 +127,8 @@ namespace Manager
         private void ucStaff_Load(object sender, EventArgs e)
         {
             pnlEditProduct.Width = 0;
+            dgvStaff.DefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Regular);
+            dgvStaff.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI Semibold", 12, FontStyle.Bold);
             dgvStaff.Rows.Add(new object[] { "100", "James", "Adams", "09/20/1980", "12345678" });
             dgvStaff.Rows.Add(new object[] { "101", "Mary", "Baker", "02/19/1974", "12345678" });
             dgvStaff.Rows.Add(new object[] { "102", "John", "Snyder", "04/21/1983", "12345678" });
